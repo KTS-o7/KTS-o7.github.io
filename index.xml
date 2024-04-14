@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KTS Blog</title>
+    <link>https://KTS-o7.github.io/</link>
+    <description>Recent content on KTS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2024 18:45:37 +0530</lastBuildDate>
+    <atom:link href="https://KTS-o7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Post</title>
+      <link>https://KTS-o7.github.io/posts/newpost/</link>
+      <pubDate>Sun, 14 Apr 2024 18:45:37 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/newpost/</guid>
+      <description>What is this ? Lets find out !</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>https://KTS-o7.github.io/posts/firstpost/</link>
+      <pubDate>Sun, 14 Apr 2024 18:19:42 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/firstpost/</guid>
+      <description>This is the first post to test the things</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.es/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.fr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.fr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.hi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.hi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.jp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.jp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.pl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.pl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.ru/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.ru/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://KTS-o7.github.io/search/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://KTS-o7.github.io/search/_index.zh-cn/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
