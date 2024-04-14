@@ -38,7 +38,13 @@
     <loc>https://KTS-o7.github.io/search/_index.zh-cn/</loc>
     <priority>0.1</priority>
   </url><url>
+    <loc>https://KTS-o7.github.io/about/about/</loc>
+  </url><url>
+    <loc>https://KTS-o7.github.io/about/</loc>
+  </url><url>
     <loc>https://KTS-o7.github.io/categories/</loc>
+  </url><url>
+    <loc>https://KTS-o7.github.io/series/</loc>
   </url><url>
     <loc>https://KTS-o7.github.io/tags/</loc>
   </url>
