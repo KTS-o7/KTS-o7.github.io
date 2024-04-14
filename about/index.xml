@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on KTS Blog</title>
+    <title>About on KTS Blog</title>
     <link>https://KTS-o7.github.io/about/</link>
-    <description>Recent content in Abouts on KTS Blog</description>
+    <description>Recent content in About on KTS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
+    <lastBuildDate>Sun, 14 Apr 2024 19:48:51 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://KTS-o7.github.io/about/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2024 19:48:51 +0530</pubDate>
       <guid>https://KTS-o7.github.io/about/about/</guid>
-      <description>Testingaksdjals</description>
+      <description>This is the about section of my blog. Here, I will provide information about myself and the purpose of this blog.&#xA;I am a passionate software developer with a keen interest in web development and data science. Through this blog, I aim to share my knowledge, experiences, and insights with fellow developers and enthusiasts.&#xA;Topics that I plan to cover in this blog include programming tutorials, tips and tricks, project showcases, and discussions on the latest trends in the tech industry.</description>
     </item>
   </channel>
 </rss>
