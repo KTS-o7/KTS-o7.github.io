@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Sun, 14 Apr 2024 18:45:37 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:55:16 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspberryPi_Zero_Setup</title>
+      <link>https://KTS-o7.github.io/posts/raspberrypi_zero_setup/</link>
+      <pubDate>Mon, 15 Apr 2024 00:55:16 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/raspberrypi_zero_setup/</guid>
+      <description>Raspberry Pi Zero Headless WiFi Setup Using Linux The following instructions will ultimately enable your Pi Zero to connect the WiFi to the router during every boot up, for a headless management.&#xA;Appendix Prerequisite Enabling USB ethernet gadget mode on Pi Things to do once connected to Pi via USB&#xA;3.1. Enabling Internet access in Raspberry Pi&#xA;3.2. SSH into Raspberry Pi&#xA;3.3. Change locale settings&#xA;3.4. Update the OS 3.</description>
+    </item>
     <item>
       <title>New Post</title>
       <link>https://KTS-o7.github.io/posts/newpost/</link>
