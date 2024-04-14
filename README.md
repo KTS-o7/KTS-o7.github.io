@@ -1,1 +1,0 @@
-# KTS-o7.github.io
