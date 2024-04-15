@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">KTS-o7 - New Post</title>
-<meta property="og:title" content=KTS-o7&#32;-&#32;New&#32;Post />
-<meta name="twitter:title" content=KTS-o7&#32;-&#32;New&#32;Post />
-<meta itemprop="name" content=KTS-o7&#32;-&#32;New&#32;Post />
-<meta name="application-name" content=KTS-o7&#32;-&#32;New&#32;Post />
+<title itemprop="name">KTS-o7 - Problem Sum Root to Leaf Numbers</title>
+<meta property="og:title" content=KTS-o7&#32;-&#32;Problem&#32;Sum&#32;Root&#32;to&#32;Leaf&#32;Numbers />
+<meta name="twitter:title" content=KTS-o7&#32;-&#32;Problem&#32;Sum&#32;Root&#32;to&#32;Leaf&#32;Numbers />
+<meta itemprop="name" content=KTS-o7&#32;-&#32;Problem&#32;Sum&#32;Root&#32;to&#32;Leaf&#32;Numbers />
+<meta name="application-name" content=KTS-o7&#32;-&#32;Problem&#32;Sum&#32;Root&#32;to&#32;Leaf&#32;Numbers />
 <meta property="og:site_name" content="KTS Blog" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://KTS-o7.github.io/posts/newpost/" />
-<link rel="canonical" href="https://KTS-o7.github.io/posts/newpost/" itemprop="url" />
-<meta name="url" content="https://KTS-o7.github.io/posts/newpost/" />
-<meta name="twitter:url" content="https://KTS-o7.github.io/posts/newpost/" />
-<meta property="og:url" content="https://KTS-o7.github.io/posts/newpost/" />
+<base href="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/" />
+<link rel="canonical" href="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/" itemprop="url" />
+<meta name="url" content="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/" />
+<meta name="twitter:url" content="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/" />
+<meta property="og:url" content="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/" />
 
 
-<meta property="og:updated_time" content="2024-04-14T18:45:37&#43;05:30" />
+<meta property="og:updated_time" content="2024-04-15T19:38:03&#43;05:30" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://KTS-o7.github.io/sitemap.xml' />
@@ -366,14 +366,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://KTS-o7.github.io/posts/newpost/">New Post</a>
+    <a href="https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/">Problem Sum Root to Leaf Numbers</a>
   </h1>
 
   <div class="headline">
     <div>
       
-      <time datetime=" 2024-04-14T18:45:37&#43;0530" class="post-date">
-        April 14, 2024
+      <time datetime=" 2024-04-15T19:38:03&#43;0530" class="post-date">
+        April 15, 2024
       </time>
       
       <span> - </span>
@@ -382,19 +382,27 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>1 min read</span>
+        <span>4 mins read</span>
       </span>
     </div>
 
     
     <ul class="tags">
       
-      <li class="tag-new">
-        <a href="https://KTS-o7.github.io/tags/new">new</a>
+      <li class="tag-leetcode">
+        <a href="https://KTS-o7.github.io/tags/leetcode">leetcode</a>
       </li>
       
-      <li class="tag-post">
-        <a href="https://KTS-o7.github.io/tags/post">post</a>
+      <li class="tag-cpp">
+        <a href="https://KTS-o7.github.io/tags/cpp">cpp</a>
+      </li>
+      
+      <li class="tag-binary tree">
+        <a href="https://KTS-o7.github.io/tags/binary-tree">binary tree</a>
+      </li>
+      
+      <li class="tag-dfs">
+        <a href="https://KTS-o7.github.io/tags/dfs">dfs</a>
       </li>
       
     </ul>
@@ -404,49 +412,97 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
   
   <p class="seriesname">
-    Series: <a href="https://KTS-o7.github.io/series/series">series</a>
+    Series: <a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a>
   </p>
   
 
   
 </div>
 
-  <p>What is this ? Lets find out !</p>
-<h1 id="mermaid">mermaid</h1>
+  <h1 id="problem-statement">Problem Statement</h1>
+<p>Link - <a href="https://leetcode.com/problems/sum-root-to-leaf-numbers/description/" target="_blank">Problem 129</a></p>
+<h2 id="question">Question</h2>
+<p>You are given the root of a binary tree containing digits from 0 to 9 only.</p>
+<p>Each root-to-leaf path in the tree represents a number.</p>
+<ul>
+<li>For example, the root-to-leaf path <code>1 -&gt; 2 -&gt; 3</code> represents the number 123.</li>
+</ul>
+<p>Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.</p>
+<p>A leaf node is a node with no children.</p>
+<h2 id="example-1">Example 1</h2>
+<pre tabindex="0"><code>Input: root = [1,2,3]
+Output: 25
+Explanation:
+The root-to-leaf path 1-&gt;2 represents the number 12.
+The root-to-leaf path 1-&gt;3 represents the number 13.
+Therefore, sum = 12 + 13 = 25.
+</code></pre><h2 id="example-2">Example 2</h2>
+<pre tabindex="0"><code>Input: root = [4,9,0,5,1]
+Output: 1026
+Explanation:
+The root-to-leaf path 4-&gt;9-&gt;5 represents the number 495.
+The root-to-leaf path 4-&gt;9-&gt;1 represents the number 491.
+The root-to-leaf path 4-&gt;0 represents the number 40.
+Therefore, sum = 495 + 491 + 40 = 1026.
+</code></pre><h2 id="constraints">Constraints</h2>
+<pre tabindex="0"><code>Constraints:
 
+The number of nodes in the tree is in the range [1, 1000].
+0 &lt;= Node.val &lt;= 9
+The depth of the tree will not exceed 10.
+</code></pre><h2 id="solution">Solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Definition for a binary tree node.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * struct TreeNode {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     int val;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *left;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *right;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * };
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> dfs(TreeNode<span style="color:#f92672">*</span> root, <span style="color:#66d9ef">int</span> path)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(root<span style="color:#f92672">==</span><span style="color:#66d9ef">nullptr</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        path <span style="color:#f92672">=</span> path<span style="color:#f92672">*</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> root<span style="color:#f92672">-&gt;</span>val;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(root<span style="color:#f92672">-&gt;</span>left <span style="color:#f92672">==</span> <span style="color:#66d9ef">nullptr</span> <span style="color:#f92672">&amp;&amp;</span> root<span style="color:#f92672">-&gt;</span>right <span style="color:#f92672">==</span> <span style="color:#66d9ef">nullptr</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> path;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dfs</span>(root<span style="color:#f92672">-&gt;</span>left,path)<span style="color:#f92672">+</span>dfs(root<span style="color:#f92672">-&gt;</span>right,path);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">sumNumbers</span>(TreeNode<span style="color:#f92672">*</span> root) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> dfs(root,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="complexity">Complexity</h2>
+<ul>
+<li><code>Time : O(N)</code></li>
+<li><code>Space : O(N)</code></li>
+</ul>
+<h2 id="explanation">Explanation</h2>
+<ol>
+<li>Depth-First Search (DFS): The solution uses a depth-first search (DFS) approach to traverse the binary tree. DFS is chosen because it allows us to explore each path from the root to a leaf node in a systematic manner.</li>
+<li>Path Representation: As we traverse the tree, we keep track of the current path from the root to the current node. This path is represented as an integer, where each digit in the path corresponds to the value of a node in the path.</li>
+<li>Appending Node Values: For each node we visit, we append its value to the current path. This is done by multiplying the current path by 10 (to shift the digits to the left) and adding the node&rsquo;s value. This operation effectively appends the node&rsquo;s value to the end of the path.</li>
+<li>Base Case: The base case for the DFS is when we reach a leaf node (a node with no children). At this point, the path represents a number, and we return this number.</li>
+<li>Recursive Calls: For each non-leaf node, we make recursive calls to the DFS function for its left and right children, passing along the updated path. This allows us to explore all possible paths from the root to the leaves.</li>
+<li>Summing Numbers: The sum of all numbers represented by the paths from the root to the leaves is calculated by adding up the numbers returned by the recursive calls.</li>
+</ol>
+<h2 id="why-this-technique-works-">Why this technique works ?</h2>
+<ul>
+<li>Systematic Exploration: DFS ensures that we explore all possible paths from the root to the leaves in a systematic manner. This is crucial for calculating the sum of all numbers represented by these paths.</li>
+<li>Path Representation: By representing the path as an integer, we can easily append the value of each node to the path and calculate the number represented by the path. This representation is efficient and straightforward.</li>
+<li>Base Case Handling: The base case (reaching a leaf node) allows us to calculate the number represented by the path from the root to the leaf. This is the key step in solving the problem.</li>
+<li>Recursive Summing: By making recursive calls and summing the results, we ensure that the sum of all numbers represented by the paths from the root to the leaves is calculated correctly.</li>
+</ul>
+<blockquote>
+<p>This technique works because it systematically explores all paths from the root to the leaves of the binary tree, calculates the number represented by each path, and sums these numbers to find the total sum of all root-to-leaf numbers.</p>
+</blockquote>
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-
-    const lsTheme = localStorage.getItem("theme")
-    const hugoTheme = document.body.classList.contains("dark-theme") ? "dark" : null
-    const currTheme = lsTheme ? lsTheme : hugoTheme;
-    const mermaidTheme = currTheme == "light" ? "default" : "dark"
-
-    mermaid.initialize({theme: mermaidTheme});
-</script>
-
-
-
-<div class="mermaid">
-sequenceDiagram
-participant Alice
-participant Bob
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts <br>prevail!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-
-</div>
-
-<h2 id="code">Code</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span>(<span style="color:#66d9ef">True</span>):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello World&#34;</span>)
-</span></span></code></pre></div>
   
   <hr>
 <div class="footer">
@@ -454,16 +510,16 @@ Bob-->>John: Jolly good!
     
     
     <p>
-    This is a post in the <b><a href="https://KTS-o7.github.io/series/series">series</a></b> series.
+    This is a post in the <b><a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a></b> series.
         <br>Other posts in this series:
         <ul class="series">
             
             
             
             <li>
-                April 14, 2024 -
+                April 15, 2024 -
                 
-                    New Post
+                    Problem Sum Root to Leaf Numbers
                 
             </li>
             
@@ -482,7 +538,14 @@ Bob-->>John: Jolly good!
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#code">Code</a></li>
+    <li><a href="#question">Question</a></li>
+    <li><a href="#example-1">Example 1</a></li>
+    <li><a href="#example-2">Example 2</a></li>
+    <li><a href="#constraints">Constraints</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#complexity">Complexity</a></li>
+    <li><a href="#explanation">Explanation</a></li>
+    <li><a href="#why-this-technique-works-">Why this technique works ?</a></li>
   </ul>
 </nav>
     </div>

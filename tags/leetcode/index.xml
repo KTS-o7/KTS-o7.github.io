@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leetcode on KTS Blog</title>
+    <link>https://KTS-o7.github.io/tags/leetcode/</link>
+    <description>Recent content in Leetcode on KTS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Krishnatejaswi S</copyright>
+    <lastBuildDate>Mon, 15 Apr 2024 19:38:03 +0530</lastBuildDate>
+    <atom:link href="https://KTS-o7.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Sum Root to Leaf Numbers</title>
+      <link>https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/</link>
+      <pubDate>Mon, 15 Apr 2024 19:38:03 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/</guid>
+      <description>Problem Statement Link - Problem 129&#xA;Question You are given the root of a binary tree containing digits from 0 to 9 only.&#xA;Each root-to-leaf path in the tree represents a number.&#xA;For example, the root-to-leaf path 1 -&amp;gt; 2 -&amp;gt; 3 represents the number 123. Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.&#xA;A leaf node is a node with no children.</description>
+    </item>
+  </channel>
+</rss>
