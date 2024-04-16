@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Mon, 15 Apr 2024 19:38:03 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2024 10:05:52 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Add One Row to Tree</title>
+      <link>https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/</link>
+      <pubDate>Tue, 16 Apr 2024 10:05:52 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/</guid>
+      <description>Problem Statement Link - Problem 623&#xA;Question Given the root of a binary tree and two integers val and depth, add a row of nodes with value val at the given depth depth.&#xA;Note that the root node is at depth 1.&#xA;The adding rule is:&#xA;Given the integer depth, for each not null tree node cur at the depth depth - 1, create two tree nodes with value val as cur&#39;s left subtree root and right subtree root.</description>
+    </item>
     <item>
       <title>Problem Sum Root to Leaf Numbers</title>
       <link>https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/</link>
