@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Tue, 16 Apr 2024 10:05:52 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2024 14:56:36 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/tags/binary-tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Smallest String Starting From Leaf</title>
+      <link>https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/</link>
+      <pubDate>Wed, 17 Apr 2024 14:56:36 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/</guid>
+      <description>Problem Statement Link - Problem 988&#xA;Question You are given the root of a binary tree where each node has a value in the range [0, 25] representing the letters &#39;a&#39; to &#39;z&#39;.&#xA;Return the lexicographically smallest string that starts at a leaf of this tree and ends at the root.&#xA;As a reminder, any shorter prefix of a string is lexicographically smaller.&#xA;For example, &amp;quot;ab&amp;quot; is lexicographically smaller than &amp;quot;aba&amp;quot;.</description>
+    </item>
     <item>
       <title>Problem Add One Row to Tree</title>
       <link>https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/</link>

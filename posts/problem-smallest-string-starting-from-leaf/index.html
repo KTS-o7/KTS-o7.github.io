@@ -49,14 +49,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">KTS Blog</title>
-<meta property="og:title" content=KTS&#32;Blog />
-<meta name="twitter:title" content=KTS&#32;Blog />
-<meta itemprop="name" content=KTS&#32;Blog />
-<meta name="application-name" content=KTS&#32;Blog />
+<title itemprop="name">KTS-o7 - Problem Smallest String Starting From Leaf</title>
+<meta property="og:title" content=KTS-o7&#32;-&#32;Problem&#32;Smallest&#32;String&#32;Starting&#32;From&#32;Leaf />
+<meta name="twitter:title" content=KTS-o7&#32;-&#32;Problem&#32;Smallest&#32;String&#32;Starting&#32;From&#32;Leaf />
+<meta itemprop="name" content=KTS-o7&#32;-&#32;Problem&#32;Smallest&#32;String&#32;Starting&#32;From&#32;Leaf />
+<meta name="application-name" content=KTS-o7&#32;-&#32;Problem&#32;Smallest&#32;String&#32;Starting&#32;From&#32;Leaf />
 <meta property="og:site_name" content="KTS Blog" />
 
 
@@ -66,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://KTS-o7.github.io/tags/setup/" />
-<link rel="canonical" href="https://KTS-o7.github.io/tags/setup/" itemprop="url" />
-<meta name="url" content="https://KTS-o7.github.io/tags/setup/" />
-<meta name="twitter:url" content="https://KTS-o7.github.io/tags/setup/" />
-<meta property="og:url" content="https://KTS-o7.github.io/tags/setup/" />
+<base href="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/" />
+<link rel="canonical" href="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/" itemprop="url" />
+<meta name="url" content="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/" />
+<meta name="twitter:url" content="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/" />
+<meta property="og:url" content="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/" />
 
 
-<meta property="og:updated_time" content="2024-04-15T00:55:16&#43;05:30" />
+<meta property="og:updated_time" content="2024-04-17T14:56:36&#43;05:30" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://KTS-o7.github.io/sitemap.xml' />
-<link href="https://KTS-o7.github.io/tags/setup/index.xml" rel="alternate" type="application/rss+xml" title="KTS Blog" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -368,25 +371,275 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Setup</h1>
-<ul class="entries">
-    
-        <h3 style="text-align: center;">2024</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/posts/raspberrypi_zero_setup/">RaspberryPi_Zero_Setup</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">April 15, 2024</time>
-                </span>
-            </li>
-        
-    
-</ul>
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/">Problem Smallest String Starting From Leaf</a>
+  </h1>
 
+  <div class="headline">
+    <div>
+      
+      <time datetime=" 2024-04-17T14:56:36&#43;0530" class="post-date">
+        April 17, 2024
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>3 mins read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-leetcode">
+        <a href="https://KTS-o7.github.io/tags/leetcode">leetcode</a>
+      </li>
+      
+      <li class="tag-cpp">
+        <a href="https://KTS-o7.github.io/tags/cpp">cpp</a>
+      </li>
+      
+      <li class="tag-binary tree">
+        <a href="https://KTS-o7.github.io/tags/binary-tree">binary tree</a>
+      </li>
+      
+      <li class="tag-dfs">
+        <a href="https://KTS-o7.github.io/tags/dfs">dfs</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+  <p class="seriesname">
+    Series: <a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a>
+  </p>
+  
+
+  
+</div>
+
+  <h1 id="problem-statement">Problem Statement</h1>
+<p><strong>Link</strong> - <a href="https://leetcode.com/problems/smallest-string-starting-from-leaf/description/" target="_blank">Problem 988</a></p>
+<h2 id="question">Question</h2>
+<p>You are given the <code>root</code> of a binary tree where each node has a value in the range <code>[0, 25]</code> representing the letters <code>'a' to 'z'</code>.</p>
+<p>Return the <code>lexicographically</code> smallest string that starts at a <code>leaf</code> of this tree and ends at the <code>root</code>.</p>
+<p>As a reminder, any shorter prefix of a string is lexicographically smaller.</p>
+<p>For example, <code>&quot;ab&quot;</code> is lexicographically smaller than <code>&quot;aba&quot;</code>.
+A leaf of a node is a node that has no children.</p>
+<h2 id="example-1">Example 1</h2>
+
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+    const lsTheme = localStorage.getItem("theme")
+    const hugoTheme = document.body.classList.contains("dark-theme") ? "dark" : null
+    const currTheme = lsTheme ? lsTheme : hugoTheme;
+    const mermaidTheme = currTheme == "light" ? "default" : "dark"
+
+    mermaid.initialize({theme: mermaidTheme});
+</script>
+
+
+
+<div class="mermaid">
+graph TD
+A[0] --> B[1]
+A --> C[2]
+B --> D[3]
+B --> E[4]
+C --> F[3]
+C --> G[4]
+
+</div>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root = [0,1,2,3,4,3,4]
+</span></span><span style="display:flex;"><span>Output: &#34;dba&#34;
+</span></span></code></pre></div><h2 id="example-2">Example 2</h2>
+
+
+<div class="mermaid">
+graph TD
+A[25] --> B[1]
+B --> C[1]
+B --> D[3]
+A --> E[3]
+E --> F[0]
+E --> G[2]
+
+</div>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root = [25,1,3,1,3,0,2]
+</span></span><span style="display:flex;"><span>Output: &#34;adz&#34;
+</span></span></code></pre></div><h2 id="example-3">Example 3</h2>
+
+
+<div class="mermaid">
+graph TD
+A[2] --> B[2]
+A --> C[1]
+B --> D[1]
+C--> E[0]
+D-->F[0]
+
+</div>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root = [2,2,1,null,1,0,null,0]
+</span></span><span style="display:flex;"><span>Output: &#34;abc&#34;
+</span></span></code></pre></div><h2 id="important-edge-case">Important Edge Case</h2>
+
+
+<div class="mermaid">
+graph TD
+A[0] --> B[1]
+
+</div>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root =  [0,null,1]
+</span></span><span style="display:flex;"><span>Output: &#34;ba&#34;
+</span></span></code></pre></div><h2 id="constraints">Constraints</h2>
+<ul>
+<li>The number of nodes in the tree is in the range <code>[1, 8500]</code>.</li>
+<li><code>0</code> &lt;= Node.val &lt;= <code>25</code></li>
+</ul>
+<h1 id="solution">Solution</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Definition for a binary tree node.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * struct TreeNode {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     int val;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *left;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *right;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * };
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> dfs(TreeNode<span style="color:#f92672">*</span> root, string str, string<span style="color:#f92672">&amp;</span> smallest)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(root <span style="color:#f92672">==</span> NULL)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        str<span style="color:#f92672">+=</span> <span style="color:#66d9ef">char</span>(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">+</span>root<span style="color:#f92672">-&gt;</span>val);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(root<span style="color:#f92672">-&gt;</span>left <span style="color:#f92672">==</span> NULL <span style="color:#f92672">&amp;&amp;</span> root<span style="color:#f92672">-&gt;</span>right <span style="color:#f92672">==</span> NULL)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            reverse(str.begin(),str.end());
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(smallest.empty() <span style="color:#f92672">||</span> str<span style="color:#f92672">&lt;</span>smallest)
+</span></span><span style="display:flex;"><span>                smallest <span style="color:#f92672">=</span> str;
+</span></span><span style="display:flex;"><span>            reverse(str.begin(),str.end());
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        dfs(root<span style="color:#f92672">-&gt;</span>left,str,smallest);
+</span></span><span style="display:flex;"><span>        dfs(root<span style="color:#f92672">-&gt;</span>right,str,smallest);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    string <span style="color:#a6e22e">smallestFromLeaf</span>(TreeNode<span style="color:#f92672">*</span> root) {
+</span></span><span style="display:flex;"><span>        string small;
+</span></span><span style="display:flex;"><span>        dfs(root,<span style="color:#e6db74">&#34;&#34;</span>,small);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> small;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="complexity">Complexity</h2>
+<ul>
+<li><code>Time : O(N)</code></li>
+<li><code>Space : O(N)</code></li>
+</ul>
+<h2 id="explanation">Explanation</h2>
+<ol>
+<li>We perform a <code>DFS</code> traversal of the tree.</li>
+<li>First we start from the <code>root</code> of the tree and traverse down.</li>
+<li>We use a string called <code>smallest</code> to keep track of the smallest string from leafnode to rootnode found so far.</li>
+<li><strong>Base Case</strong> for recursion - if root is <code>NULL</code> then just return.</li>
+<li>We append the character to the string <code>str</code> which is the character at the current node.</li>
+<li>String <code>str</code> actually stores the current path which is being developed from rootnode to leafnode.</li>
+<li>If we reach a leafnode then we reverse the <code>str</code> and check if its the lexographically smallest string which we saw so far.</li>
+<li>If yes then update the <code>smallest</code>.</li>
+<li>Then reverse <code>str</code> again so that we can continue exploring the path.</li>
+<li>Then we recursively explore the left subtree and right subtree looking for leaf nodes.</li>
+</ol>
+<hr>
+<blockquote>
+<p>This solution effectively demonstrates the usage of DFS to build a string from a tree following the given set of rules.</p>
+</blockquote>
+
+  
+  <hr>
+<div class="footer">
+    
+    
+    
+    <p>
+    This is a post in the <b><a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a></b> series.
+        <br>Other posts in this series:
+        <ul class="series">
+            
+            
+            
+            <li>
+                April 17, 2024 -
+                
+                    Problem Smallest String Starting From Leaf
+                
+            </li>
+            
+            <li>
+                April 16, 2024 -
+                
+                    <a href="/posts/problem-add-one-row-to-tree/">Problem Add One Row to Tree</a>
+                
+            </li>
+            
+            <li>
+                April 15, 2024 -
+                
+                    <a href="/posts/problem-sum-root-to-leaf-numbers/">Problem Sum Root to Leaf Numbers</a>
+                
+            </li>
+            
+        </ul>
+    </p>
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#question">Question</a></li>
+    <li><a href="#example-1">Example 1</a></li>
+    <li><a href="#example-2">Example 2</a></li>
+    <li><a href="#example-3">Example 3</a></li>
+    <li><a href="#important-edge-case">Important Edge Case</a></li>
+    <li><a href="#constraints">Constraints</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#complexity">Complexity</a></li>
+    <li><a href="#explanation">Explanation</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
