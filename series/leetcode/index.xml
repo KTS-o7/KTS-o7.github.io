@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Wed, 17 Apr 2024 14:56:36 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2024 20:48:14 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/series/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Island Perimeter</title>
+      <link>https://KTS-o7.github.io/posts/problem-island-perimeter/</link>
+      <pubDate>Thu, 18 Apr 2024 20:48:14 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-island-perimeter/</guid>
+      <description>Problem Statement Link - Problem 463&#xA;Question You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.&#xA;Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).&#xA;The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
+    </item>
     <item>
       <title>Problem Smallest String Starting From Leaf</title>
       <link>https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/</link>
