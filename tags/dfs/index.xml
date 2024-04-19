@@ -14,7 +14,7 @@
       <link>https://KTS-o7.github.io/posts/problem-number-of-islands/</link>
       <pubDate>Fri, 19 Apr 2024 13:00:30 +0530</pubDate>
       <guid>https://KTS-o7.github.io/posts/problem-number-of-islands/</guid>
-      <description>Problem Statement Link - Problem 200&#xA;Question Given an m x n 2D binary grid grid which represents a map of &#39;1&#39;s (land) and &#39;0&#39;s (water), return the number of islands.&#xA;An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.&#xA;Note to self: They use characters not integers for 1 and 0.</description>
+      <description>Problem Statement Link - Problem 200&#xA;Question Given an m x n 2D binary grid grid which represents a map of &#39;1&#39;s (land) and &#39;0&#39;s (water), return the number of islands.&#xA;An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.&#xA;Note to self They use characters not integers for 1 and 0.</description>
     </item>
     <item>
       <title>Problem Smallest String Starting From Leaf</title>

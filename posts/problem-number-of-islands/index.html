@@ -361,6 +361,12 @@
     </a>
 
 
+    <a target="_blank" class="social" title="Resume" href="https://drive.google.com/file/d/1oxmvlLVVMBtA-GA50sitNZKWfGuE4wir/view">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6s6 2.69 6 6s-2.69 6-6 6zm-1-9h2v2h-2v-2zm0 4h2v6h-2v-6z"/>
+        </svg>
+    </a>
+
         <p class="footnote">
 powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
     <br>
@@ -436,7 +442,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <h2 id="question">Question</h2>
 <p>Given an <code>m x n</code> 2D binary grid grid which represents a map of <code>'1'</code>s (land) and <code>'0'</code>s (water), return the number of islands.</p>
 <p>An <strong>island</strong> is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>
-<h3 id="note-to-self">Note to self:</h3>
+<h3 id="note-to-self">Note to self</h3>
 <ul>
 <li>They use characters not integers for <code>1</code> and <code>0</code>.</li>
 <li>This is a classic dfs problem.</li>
@@ -514,7 +520,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <li>This recursive call checks if its adjacent cells are <code>'0'</code> or <code>'1'</code>.</li>
 <li>If they all are Zeroes then the call will end and the count of islands <code>Islands</code> will be incremented.</li>
 <li>If the current cell has an unvisited land neighbour then we extend our search there.</li>
-<li>So whenever the <code>dfs</code> function is ended by the base case it means it has found a valid island.</li>
+<li>So whenever the <code>checkIsland</code> function is ended by the base case it means it has found a valid island.</li>
 </ol>
 <hr>
 <blockquote>
@@ -586,7 +592,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   <ul>
     <li><a href="#question">Question</a>
       <ul>
-        <li><a href="#note-to-self">Note to self:</a></li>
+        <li><a href="#note-to-self">Note to self</a></li>
       </ul>
     </li>
     <li><a href="#example-1">Example 1</a></li>
