@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">KTS-o7 - About</title>
-<meta property="og:title" content=KTS-o7&#32;-&#32;About />
-<meta name="twitter:title" content=KTS-o7&#32;-&#32;About />
-<meta itemprop="name" content=KTS-o7&#32;-&#32;About />
-<meta name="application-name" content=KTS-o7&#32;-&#32;About />
+<title itemprop="name">KTS-o7 - Problem Number of Islands</title>
+<meta property="og:title" content=KTS-o7&#32;-&#32;Problem&#32;Number&#32;of&#32;Islands />
+<meta name="twitter:title" content=KTS-o7&#32;-&#32;Problem&#32;Number&#32;of&#32;Islands />
+<meta itemprop="name" content=KTS-o7&#32;-&#32;Problem&#32;Number&#32;of&#32;Islands />
+<meta name="application-name" content=KTS-o7&#32;-&#32;Problem&#32;Number&#32;of&#32;Islands />
 <meta property="og:site_name" content="KTS Blog" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://KTS-o7.github.io/about/about/" />
-<link rel="canonical" href="https://KTS-o7.github.io/about/about/" itemprop="url" />
-<meta name="url" content="https://KTS-o7.github.io/about/about/" />
-<meta name="twitter:url" content="https://KTS-o7.github.io/about/about/" />
-<meta property="og:url" content="https://KTS-o7.github.io/about/about/" />
+<base href="https://KTS-o7.github.io/posts/problem-number-of-islands/" />
+<link rel="canonical" href="https://KTS-o7.github.io/posts/problem-number-of-islands/" itemprop="url" />
+<meta name="url" content="https://KTS-o7.github.io/posts/problem-number-of-islands/" />
+<meta name="twitter:url" content="https://KTS-o7.github.io/posts/problem-number-of-islands/" />
+<meta property="og:url" content="https://KTS-o7.github.io/posts/problem-number-of-islands/" />
 
 
-<meta property="og:updated_time" content="2024-04-14T19:48:51&#43;05:30" />
+<meta property="og:updated_time" content="2024-04-19T13:00:30&#43;05:30" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://KTS-o7.github.io/sitemap.xml' />
@@ -374,14 +374,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://KTS-o7.github.io/about/about/">About</a>
+    <a href="https://KTS-o7.github.io/posts/problem-number-of-islands/">Problem Number of Islands</a>
   </h1>
 
   <div class="headline">
     <div>
       
-      <time datetime=" 2024-04-14T19:48:51&#43;0530" class="post-date">
-        April 14, 2024
+      <time datetime=" 2024-04-19T13:00:30&#43;0530" class="post-date">
+        April 19, 2024
       </time>
       
       <span> - </span>
@@ -395,43 +395,182 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     </div>
 
     
+    <ul class="tags">
+      
+      <li class="tag-leetcode">
+        <a href="https://KTS-o7.github.io/tags/leetcode">leetcode</a>
+      </li>
+      
+      <li class="tag-cpp">
+        <a href="https://KTS-o7.github.io/tags/cpp">cpp</a>
+      </li>
+      
+      <li class="tag-matrix">
+        <a href="https://KTS-o7.github.io/tags/matrix">matrix</a>
+      </li>
+      
+      <li class="tag-dfs">
+        <a href="https://KTS-o7.github.io/tags/dfs">dfs</a>
+      </li>
+      
+      <li class="tag-array">
+        <a href="https://KTS-o7.github.io/tags/array">array</a>
+      </li>
+      
+    </ul>
+    
   </div>
 
   
+  
+  <p class="seriesname">
+    Series: <a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a>
+  </p>
   
 
   
 </div>
 
-  <h1 id="about-me">About Me</h1>
-<p>Hello! I&rsquo;m [Your Name], a passionate Computer Science and Engineering student from Bangalore, India. My journey in the world of technology has been both challenging and rewarding, and I&rsquo;m excited to share my experiences and projects with you.</p>
-<h2 id="academic-background">Academic Background</h2>
+  <h1 id="problem-statement">Problem Statement</h1>
+<p><strong>Link</strong> - <a href="https:leetcode.com/problems/number-of-islands/description/" target="_blank">Problem 200</a></p>
+<h2 id="question">Question</h2>
+<p>Given an <code>m x n</code> 2D binary grid grid which represents a map of <code>'1'</code>s (land) and <code>'0'</code>s (water), return the number of islands.</p>
+<p>An <strong>island</strong> is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>
+<h3 id="note-to-self">Note to self:</h3>
 <ul>
-<li>I&rsquo;m currently pursuing my <strong>B.E degree</strong> in <strong>Computer Science and Engineering</strong> at <strong>RV College of Engineering</strong>, where I&rsquo;ve had the opportunity to dive deep into various technologies and programming languages.</li>
-<li>My <a href="https://krishnatejaswi-s.vercel.app/#projects" target="_blank"><strong>academic and research</strong></a> projects have allowed me to explore and master languages like Python and C++, and I&rsquo;m always eager to learn and experiment with new technologies.</li>
+<li>They use characters not integers for <code>1</code> and <code>0</code>.</li>
+<li>This is a classic dfs problem.</li>
 </ul>
-<h2 id="portfolio">Portfolio</h2>
-<p>I&rsquo;ve worked on a variety of projects that have helped me grow as a developer. Check out my <a href="https://krishnatejaswi-s.vercel.app/" target="_blank"><strong>portfolio</strong></a> to see some of my work. From web development to machine learning, I&rsquo;ve tackled projects that challenge me and push my boundaries.</p>
-<h2 id="passion-for-coding">Passion for Coding</h2>
-<p>My passion for coding extends beyond the classroom. I&rsquo;m particularly interested in exploring the cutting-edge technologies that are shaping the future of the tech industry. Some of the areas I&rsquo;m currently exploring include:</p>
+<h2 id="example-1">Example 1</h2>
+<p><strong>Input:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>grid = [
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;]
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>1
+</span></span></code></pre></div><h2 id="example-2">Example 2</h2>
+<p><strong>Input:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>grid = [
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;1&#34;]
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>3
+</span></span></code></pre></div><h2 id="constraints">Constraints</h2>
 <ul>
-<li><strong>OpenCV</strong>: A facinating library to work with image processing in python.</li>
-<li><strong>Ollama</strong>: A platform that&rsquo;s revolutionizing the way we interact with AI.</li>
-<li><strong>Generative AI</strong>: Creating content and models that can generate human-like text and images.</li>
-<li><strong>JavaScript, Next.js</strong>: Building dynamic and responsive web applications.</li>
-<li><strong>PyTorch</strong>: Diving into the world of machine learning and AI.</li>
+<li><code>m == grid.length</code></li>
+<li><code>n == grid[i].length</code></li>
+<li><code>1 &lt;= m, n &lt;= 300</code></li>
+<li><code>grid[i][j]</code> is <code>'0'</code> or <code>'1'</code>.</li>
 </ul>
-<h2 id="contact-me">Contact Me</h2>
-<p>If you&rsquo;re interested in my work, have questions, or would like to collaborate on a project, feel free to <a href="https://krishnatejaswi-s.vercel.app/#contact" target="_blank"><strong>contact me</strong></a>. I&rsquo;m always open to new connections and opportunities.</p>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> checkIsland(<span style="color:#66d9ef">int</span> row,<span style="color:#66d9ef">int</span> col,vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">char</span><span style="color:#f92672">&gt;&gt;&amp;</span> grid)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(row <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> col <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> row <span style="color:#f92672">&gt;=</span> grid.size() <span style="color:#f92672">||</span> col <span style="color:#f92672">&gt;=</span> grid[<span style="color:#ae81ff">0</span>].size() <span style="color:#f92672">||</span> grid[row][col] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;1&#39;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            grid[row][col] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span>;
+</span></span><span style="display:flex;"><span>            checkIsland(row <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, col,grid);
+</span></span><span style="display:flex;"><span>            checkIsland(row <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, col,grid);
+</span></span><span style="display:flex;"><span>            checkIsland(row, col <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,grid);
+</span></span><span style="display:flex;"><span>            checkIsland(row, col <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>,grid);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">numIslands</span>(vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">char</span><span style="color:#f92672">&gt;&gt;&amp;</span> grid) {
+</span></span><span style="display:flex;"><span>        std<span style="color:#f92672">::</span>ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(grid.empty() <span style="color:#f92672">||</span> grid[<span style="color:#ae81ff">0</span>].empty())
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> rows <span style="color:#f92672">=</span> grid.size();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> cols <span style="color:#f92672">=</span> grid[<span style="color:#ae81ff">0</span>].size();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> islands <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> row <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; row <span style="color:#f92672">&lt;</span> rows; row<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> col <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; col <span style="color:#f92672">&lt;</span> cols; col<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(grid[row][col] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span>) {
+</span></span><span style="display:flex;"><span>                    checkIsland(row, col,grid);
+</span></span><span style="display:flex;"><span>                    islands<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> islands;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="complexity">Complexity</h2>
+<ul>
+<li><code>Time : O(m*n)</code></li>
+<li><code>Space : O(m*n)</code></li>
+</ul>
+<h2 id="explaination">Explaination</h2>
+<ol>
+<li>We use the classic dfs approach to solve this.</li>
+<li>The logic is to check if the current cell is in bounds, and is <code>'1'</code>.</li>
+<li>If it is then the cell is marked as visited and call the function recursively on all the 4 directions.</li>
+<li>This recursive call checks if its adjacent cells are <code>'0'</code> or <code>'1'</code>.</li>
+<li>If they all are Zeroes then the call will end and the count of islands <code>Islands</code> will be incremented.</li>
+<li>If the current cell has an unvisited land neighbour then we extend our search there.</li>
+<li>So whenever the <code>dfs</code> function is ended by the base case it means it has found a valid island.</li>
+</ol>
 <hr>
-<p>Thank you for visiting my About page. I look forward to sharing more of my journey with you!</p>
+<blockquote>
+<p>This demonstrates the use of DFS to traverse a 2D matrix and find the components or groups.</p>
+</blockquote>
 
   
   <hr>
 <div class="footer">
     
-	    
-	    
+    
+    
+    <p>
+    This is a post in the <b><a href="https://KTS-o7.github.io/series/leetcode">Leetcode</a></b> series.
+        <br>Other posts in this series:
+        <ul class="series">
+            
+            
+            
+            <li>
+                April 19, 2024 -
+                
+                    Problem Number of Islands
+                
+            </li>
+            
+            <li>
+                April 18, 2024 -
+                
+                    <a href="/posts/problem-island-perimeter/">Problem Island Perimeter</a>
+                
+            </li>
+            
+            <li>
+                April 17, 2024 -
+                
+                    <a href="/posts/problem-smallest-string-starting-from-leaf/">Problem Smallest String Starting From Leaf</a>
+                
+            </li>
+            
+            <li>
+                April 16, 2024 -
+                
+                    <a href="/posts/problem-add-one-row-to-tree/">Problem Add One Row to Tree</a>
+                
+            </li>
+            
+            <li>
+                April 15, 2024 -
+                
+                    <a href="/posts/problem-sum-root-to-leaf-numbers/">Problem Sum Root to Leaf Numbers</a>
+                
+            </li>
+            
+        </ul>
+    </p>
     
 </div>
 
@@ -445,10 +584,17 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#academic-background">Academic Background</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#passion-for-coding">Passion for Coding</a></li>
-    <li><a href="#contact-me">Contact Me</a></li>
+    <li><a href="#question">Question</a>
+      <ul>
+        <li><a href="#note-to-self">Note to self:</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-1">Example 1</a></li>
+    <li><a href="#example-2">Example 2</a></li>
+    <li><a href="#constraints">Constraints</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#complexity">Complexity</a></li>
+    <li><a href="#explaination">Explaination</a></li>
   </ul>
 </nav>
     </div>
