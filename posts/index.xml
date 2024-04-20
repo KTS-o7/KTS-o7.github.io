@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Fri, 19 Apr 2024 13:00:30 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2024 10:52:46 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Find All Groups of Farmland</title>
+      <link>https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/</link>
+      <pubDate>Sat, 20 Apr 2024 10:52:46 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/</guid>
+      <description>Problem Statement Link - Problem 1992&#xA;Question You are given a 0-indexed m x n binary matrix land where a 0 represents a hectare of forested land and a 1 represents a hectare of farmland.&#xA;To keep the land organized, there are designated rectangular areas of hectares that consist entirely of farmland. These rectangular areas are called groups. No two groups are adjacent, meaning farmland in one group is not four-directionally adjacent to another farmland in a different group.</description>
+    </item>
     <item>
       <title>Problem Number of Islands</title>
       <link>https://KTS-o7.github.io/posts/problem-number-of-islands/</link>

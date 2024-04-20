@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">KTS-o7 - Problem Add One Row to Tree</title>
-<meta property="og:title" content=KTS-o7&#32;-&#32;Problem&#32;Add&#32;One&#32;Row&#32;to&#32;Tree />
-<meta name="twitter:title" content=KTS-o7&#32;-&#32;Problem&#32;Add&#32;One&#32;Row&#32;to&#32;Tree />
-<meta itemprop="name" content=KTS-o7&#32;-&#32;Problem&#32;Add&#32;One&#32;Row&#32;to&#32;Tree />
-<meta name="application-name" content=KTS-o7&#32;-&#32;Problem&#32;Add&#32;One&#32;Row&#32;to&#32;Tree />
+<title itemprop="name">KTS-o7 - Problem Find All Groups of Farmland</title>
+<meta property="og:title" content=KTS-o7&#32;-&#32;Problem&#32;Find&#32;All&#32;Groups&#32;of&#32;Farmland />
+<meta name="twitter:title" content=KTS-o7&#32;-&#32;Problem&#32;Find&#32;All&#32;Groups&#32;of&#32;Farmland />
+<meta itemprop="name" content=KTS-o7&#32;-&#32;Problem&#32;Find&#32;All&#32;Groups&#32;of&#32;Farmland />
+<meta name="application-name" content=KTS-o7&#32;-&#32;Problem&#32;Find&#32;All&#32;Groups&#32;of&#32;Farmland />
 <meta property="og:site_name" content="KTS Blog" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/" />
-<link rel="canonical" href="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/" itemprop="url" />
-<meta name="url" content="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/" />
-<meta name="twitter:url" content="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/" />
-<meta property="og:url" content="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/" />
+<base href="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/" />
+<link rel="canonical" href="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/" itemprop="url" />
+<meta name="url" content="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/" />
+<meta name="twitter:url" content="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/" />
+<meta property="og:url" content="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/" />
 
 
-<meta property="og:updated_time" content="2024-04-16T10:05:52&#43;05:30" />
+<meta property="og:updated_time" content="2024-04-20T10:52:46&#43;05:30" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://KTS-o7.github.io/sitemap.xml' />
@@ -380,14 +380,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/">Problem Add One Row to Tree</a>
+    <a href="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/">Problem Find All Groups of Farmland</a>
   </h1>
 
   <div class="headline">
     <div>
       
-      <time datetime=" 2024-04-16T10:05:52&#43;0530" class="post-date">
-        April 16, 2024
+      <time datetime=" 2024-04-20T10:52:46&#43;0530" class="post-date">
+        April 20, 2024
       </time>
       
       <span> - </span>
@@ -396,7 +396,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>5 mins read</span>
+        <span>3 mins read</span>
       </span>
     </div>
 
@@ -411,8 +411,8 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
         <a href="https://KTS-o7.github.io/tags/cpp">cpp</a>
       </li>
       
-      <li class="tag-binary tree">
-        <a href="https://KTS-o7.github.io/tags/binary-tree">binary tree</a>
+      <li class="tag-matrix">
+        <a href="https://KTS-o7.github.io/tags/matrix">matrix</a>
       </li>
       
       <li class="tag-dfs">
@@ -434,119 +434,84 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <h1 id="problem-statement">Problem Statement</h1>
-<p>Link - <a href="https://leetcode.com/problems/add-one-row-to-tree/description/" target="_blank">Problem 623</a></p>
+<p><strong>Link</strong> - <a href="https://leetcode.com/problems/find-all-groups-of-farmland/description/" target="_blank">Problem 1992</a></p>
 <h2 id="question">Question</h2>
-<p>Given the <code>root</code> of a binary tree and two integers val and depth, add a row of nodes with value val at the given depth depth.</p>
-<p>Note that the <code>root</code> node is at depth <code>1</code>.</p>
-<p>The adding rule is:</p>
-<ul>
-<li>Given the integer <code>depth</code>, for each not null tree node <code>cur</code> at the depth <code>depth - 1</code>, create two tree nodes with value val as <code>cur's</code> left subtree root and right subtree root.</li>
-<li><code>cur's</code> original left subtree should be the left subtree of the new left subtree root.</li>
-<li><code>cur's</code> original right subtree should be the right subtree of the new right subtree root.</li>
-<li>If <code>depth == 1</code> that means there is no depth <code>depth - 1</code> at all, then create a tree node with value val as the new root of the whole original tree, and the original tree is the new root&rsquo;s left subtree.</li>
-</ul>
+<p>You are given a 0-indexed <code>m x n</code> binary matrix <code>land</code> where a <code>0</code> represents a hectare of forested <code>land </code>and a <code>1</code> represents a hectare of farmland.</p>
+<p>To keep the <code>land </code>organized, there are designated rectangular areas of hectares that consist entirely of farmland. These rectangular areas are called groups. No two groups are adjacent, meaning farmland in one group is not four-directionally adjacent to another farmland in a different group.</p>
+<p><code>land </code>can be represented by a coordinate system where the top left corner of <code>land </code>is <code>(0, 0)</code> and the bottom right corner of <code>land </code>is <code>(m-1, n-1)</code>. Find the coordinates of the top left and bottom right corner of each group of farmland. A group of farmland with a top left corner at <code>(r1, c1)</code> and a bottom right corner at <code>(r2, c2)</code> is represented by the 4-length array <code>[r1, c1, r2, c2]</code>.</p>
+<p>Return a 2D array containing the 4-length arrays described above for each <strong>group</strong> of farm<code>land </code>in land. If there are no groups of farmland, return an empty array. You may return the answer in <strong>any order</strong>.</p>
 <h2 id="example-1">Example 1</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root = [4,2,6,3,1,5], val = 1, depth = 2
-</span></span><span style="display:flex;"><span>Output: [4,1,1,2,null,null,6,3,1,5]
-</span></span></code></pre></div><h1 id="example-2">Example 2</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: root = [4,2,null,3,1], val = 1, depth = 3
-</span></span><span style="display:flex;"><span>Output: [4,2,null,1,1,3,null,null,1]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: land = [[1,0,0],[0,1,1],[0,1,1]]
+</span></span><span style="display:flex;"><span>Output: [[0,0,0,0],[1,1,2,2]]
+</span></span><span style="display:flex;"><span>Explanation:
+</span></span><span style="display:flex;"><span>The first group has a top left corner at land[0][0] and a bottom right corner at land[0][0].
+</span></span><span style="display:flex;"><span>The second group has a top left corner at land[1][1] and a bottom right corner at land[2][2].
+</span></span></code></pre></div><h2 id="example-2">Example 2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: land = [[1,1],[1,1]]
+</span></span><span style="display:flex;"><span>Output: [[0,0,1,1]]
+</span></span><span style="display:flex;"><span>Explanation:
+</span></span><span style="display:flex;"><span>The first group has a top left corner at land[0][0] and a bottom right corner at land[1][1].
+</span></span></code></pre></div><h2 id="example-3">Example 3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: land = [[0]]
+</span></span><span style="display:flex;"><span>Output: []
+</span></span><span style="display:flex;"><span>Explanation:
+</span></span><span style="display:flex;"><span>There are no groups of farmland.
 </span></span></code></pre></div><h2 id="constraints">Constraints</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>The number of nodes in the tree is in the range [1, 10^4].
-</span></span><span style="display:flex;"><span>The depth of the tree is in the range [1, 10^4].
-</span></span><span style="display:flex;"><span>-100 &lt;= Node.val &lt;= 100
-</span></span><span style="display:flex;"><span>-10^5 &lt;= val &lt;= 10^5
-</span></span><span style="display:flex;"><span>1 &lt;= depth &lt;= the depth of tree + 1
-</span></span></code></pre></div><h2 id="solution">Solution</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">/**
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Definition for a binary tree node.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * struct TreeNode {
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     int val;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *left;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode *right;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode() : val(0), left(NULL), right(NULL) {}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * };
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+<ul>
+<li><code>m == land.length</code></li>
+<li><code>n == land[i].length</code></li>
+<li><code>1</code> &lt;= m, n &lt;= <code>300</code></li>
+<li><code>land</code> consists of only <code>0'</code>s and <code>1'</code>s.</li>
+<li>Groups of farmland are rectangular in shape.</li>
+</ul>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> dfs(TreeNode<span style="color:#f92672">*</span> root,<span style="color:#66d9ef">int</span> val,<span style="color:#66d9ef">int</span> currDepth,<span style="color:#66d9ef">int</span> depth)
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(root <span style="color:#f92672">==</span> NULL)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(currDepth <span style="color:#f92672">==</span> depth<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            root<span style="color:#f92672">-&gt;</span>left <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TreeNode(val,root<span style="color:#f92672">-&gt;</span>left,NULL);
-</span></span><span style="display:flex;"><span>            root<span style="color:#f92672">-&gt;</span>right <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TreeNode(val,NULL,root<span style="color:#f92672">-&gt;</span>right);
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        dfs(root<span style="color:#f92672">-&gt;</span>left,val,currDepth<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,depth);
-</span></span><span style="display:flex;"><span>        dfs(root<span style="color:#f92672">-&gt;</span>right,val,currDepth<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,depth);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> dfs(<span style="color:#66d9ef">int</span> i, <span style="color:#66d9ef">int</span> j, <span style="color:#66d9ef">int</span><span style="color:#f92672">&amp;</span> r1, <span style="color:#66d9ef">int</span><span style="color:#f92672">&amp;</span> c1, <span style="color:#66d9ef">int</span><span style="color:#f92672">&amp;</span> r2, <span style="color:#66d9ef">int</span><span style="color:#f92672">&amp;</span> c2,vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;&amp;</span> land){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">&gt;=</span> land.size() <span style="color:#f92672">||</span> j <span style="color:#f92672">&gt;=</span> land[<span style="color:#ae81ff">0</span>].size() <span style="color:#f92672">||</span> land[i][j] <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>        land[i][j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        r1<span style="color:#f92672">=</span>min(r1, i), c1<span style="color:#f92672">=</span>min(c1, j), r2<span style="color:#f92672">=</span>max(r2, i), c2<span style="color:#f92672">=</span>max(c2, j);
+</span></span><span style="display:flex;"><span>            dfs(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,j, r1, c1, r2, c2, land);
+</span></span><span style="display:flex;"><span>            dfs(i,j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, r1, c1, r2, c2, land);
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// No need to check top and left because it is given that it is always a rectangle.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">//dfs(i-1,j, r1, c1, r2, c2, land);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">//dfs(i,j-1, r1, c1, r2, c2, land);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    TreeNode<span style="color:#f92672">*</span> <span style="color:#a6e22e">addOneRow</span>(TreeNode<span style="color:#f92672">*</span> root, <span style="color:#66d9ef">int</span> val, <span style="color:#66d9ef">int</span> depth) {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(depth <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> TreeNode(val,root,NULL);
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;</span> findFarmland(vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;&amp;</span> land) {
+</span></span><span style="display:flex;"><span>        std<span style="color:#f92672">::</span>ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> n<span style="color:#f92672">=</span>land.size();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> m<span style="color:#f92672">=</span>land[<span style="color:#ae81ff">0</span>].size();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> r1,r2,c1,c2;
+</span></span><span style="display:flex;"><span>        vector<span style="color:#f92672">&lt;</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;</span> answer;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; j<span style="color:#f92672">&lt;</span>m; j<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(land[i][j]<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>){
+</span></span><span style="display:flex;"><span>                    r1<span style="color:#f92672">=</span>i, c1<span style="color:#f92672">=</span>j, r2<span style="color:#f92672">=</span>i, c2<span style="color:#f92672">=</span>j;
+</span></span><span style="display:flex;"><span>                    dfs(i, j, r1, c1, r2, c2, land);
+</span></span><span style="display:flex;"><span>                    answer.push_back({r1, c1, r2, c2});
+</span></span><span style="display:flex;"><span>                }
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        dfs(root,val,<span style="color:#ae81ff">1</span>,depth);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> root;
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h2 id="complexity">Complexity</h2>
-<ul>
-<li><code>Time : O(N)</code></li>
-<li><code>Space : O(N)</code></li>
-</ul>
-<h2 id="explaination">Explaination</h2>
-<p>The provided code is a C++ solution for adding a new row of nodes with a given value to a binary tree at a specified depth. The solution uses a depth-first search (DFS) approach to traverse the tree and add the new nodes. Here&rsquo;s a breakdown of the approach and logic:</p>
-<h2 id="approach">Approach</h2>
+</span></span></code></pre></div><h2 id="explaination">Explaination</h2>
 <ol>
-<li>
-<p><strong>Depth-First Search (DFS)</strong>: The solution uses a DFS approach to traverse the binary tree. DFS is chosen because it allows us to explore each path from the root to a leaf node in a systematic manner, which is crucial for adding nodes at a specific depth.</p>
-</li>
-<li>
-<p><strong>Adding Nodes at the Specified Depth</strong>: The <code>dfs</code> function is designed to add new nodes at the specified depth. It takes four parameters: the current node (<code>root</code>), the value to be added to the new nodes (<code>val</code>), the current depth (<code>currDepth</code>), and the target depth (<code>depth</code>).</p>
-</li>
-<li>
-<p><strong>Base Case</strong>: The base case for the DFS is when the current depth equals the target depth minus one. At this point, the function creates new nodes with the given value and adds them as the left and right children of the current node. This effectively adds a new row of nodes at the specified depth.</p>
-</li>
-<li>
-<p><strong>Recursive Calls</strong>: For each node, the function makes recursive calls to itself for the left and right children of the current node, incrementing the current depth by one. This allows the function to explore all nodes at the specified depth and add the new nodes.</p>
-</li>
-<li>
-<p><strong>Handling the Root Node</strong>: If the target depth is 1, the <code>addOneRow</code> function creates a new root node with the given value and the original root as its right child. This effectively adds a new row of nodes at the root level.</p>
-</li>
+<li>We will use the DFS technique to find the farmland.</li>
+<li>This is very similar to the number of islands problem. <a href="https://kts-o7.github.io/posts/problem-number-of-islands/" target="_blank">Check it Out</a>.</li>
+<li>We will iterate over the matrix given only if the current cell is <code>1</code>.</li>
+<li>In the <code>dfs</code> function, we will check if the current cell is in bounds and is <code>1</code>.</li>
+<li>If it is, we will mark it as <code>0</code> and update the <code>r1</code>, <code>c1</code>, <code>r2</code>, <code>c2</code> values.</li>
+<li>The <code>r1</code>, <code>c1</code> will be the minimum values of the current cell and the <code>r2</code>, <code>c2</code> will be the maximum values of the current cell.</li>
+<li><code>r1</code>, <code>c1</code> will be the top left corner and <code>r2</code>, <code>c2</code> will be the bottom right corner of the farmland.</li>
+<li>We will call the <code>dfs</code> function recursively on the right and bottom cells.</li>
+<li>We need not to check the top and left cells because it is given that the farmland is always a rectangle.</li>
+<li>Once the <code>dfs</code> function is ended, we will push the <code>r1</code>, <code>c1</code>, <code>r2</code>, <code>c2</code> values to the answer array.</li>
 </ol>
-<h2 id="logic">Logic</h2>
-<ul>
-<li>
-<p><strong>DFS Traversal</strong>: The DFS traversal starts from the root and explores each path from the root to a leaf node. The traversal is controlled by the <code>currDepth</code> and <code>depth</code> parameters, ensuring that nodes are added only at the specified depth.</p>
-</li>
-<li>
-<p><strong>Adding New Nodes</strong>: When the DFS reaches the specified depth, it adds new nodes with the given value as the left and right children of the current node. This is done by creating new <code>TreeNode</code> instances with the given value and the existing left and right children of the current node.</p>
-</li>
-<li>
-<p><strong>Returning the Modified Tree</strong>: After adding the new nodes, the <code>addOneRow</code> function returns the modified tree. If the target depth is 1, it returns a new root node; otherwise, it returns the original root node.</p>
-</li>
-</ul>
-<h2 id="why-this-approach-works-">Why This Approach Works ?</h2>
-<ul>
-<li>
-<p><strong>Systematic Exploration</strong>: DFS ensures that we explore all nodes in the tree in a systematic manner, allowing us to add new nodes at the specified depth.</p>
-</li>
-<li>
-<p><strong>Depth Control</strong>: By comparing <code>currDepth</code> with <code>depth - 1</code>, we can precisely control when to add new nodes, ensuring that they are added only at the specified depth.</p>
-</li>
-<li>
-<p><strong>Flexibility</strong>: This approach can handle adding a new row of nodes at any depth within the tree, making it versatile for different scenarios.</p>
-</li>
-</ul>
+<hr>
 <blockquote>
-<p>This solution effectively demonstrates how to use DFS to modify a binary tree by adding a new row of nodes at a specified depth.</p>
+<p>This demonstrates the use of DFS to traverse a 2D matrix and find the components or groups.</p>
 </blockquote>
 
   
@@ -565,7 +530,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
             <li>
                 April 20, 2024 -
                 
-                    <a href="/posts/problem-find-all-groups-of-farmland/">Problem Find All Groups of Farmland</a>
+                    Problem Find All Groups of Farmland
                 
             </li>
             
@@ -593,7 +558,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
             <li>
                 April 16, 2024 -
                 
-                    Problem Add One Row to Tree
+                    <a href="/posts/problem-add-one-row-to-tree/">Problem Add One Row to Tree</a>
                 
             </li>
             
@@ -621,16 +586,11 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   <ul>
     <li><a href="#question">Question</a></li>
     <li><a href="#example-1">Example 1</a></li>
-  </ul>
-
-  <ul>
+    <li><a href="#example-2">Example 2</a></li>
+    <li><a href="#example-3">Example 3</a></li>
     <li><a href="#constraints">Constraints</a></li>
     <li><a href="#solution">Solution</a></li>
-    <li><a href="#complexity">Complexity</a></li>
     <li><a href="#explaination">Explaination</a></li>
-    <li><a href="#approach">Approach</a></li>
-    <li><a href="#logic">Logic</a></li>
-    <li><a href="#why-this-approach-works-">Why This Approach Works ?</a></li>
   </ul>
 </nav>
     </div>
