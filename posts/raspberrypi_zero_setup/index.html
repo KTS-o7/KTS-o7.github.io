@@ -20,7 +20,7 @@
 
 
 
-<script defer language="javascript" type="text/javascript" src="/js/bundle.min.91ae35f985ba4ae6473b8defee39551f3ce6ed2769fdfa9b3df93f2eac0da4bc.js"></script>
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.e9f44426a02cf87f96efd07694c1fbf18d0e09fed667be0b8f052a1923f672de.js"></script>
 
 
 
@@ -240,6 +240,8 @@
                 
                         
                 
+                        
+                
             
         
         
@@ -260,6 +262,10 @@
                         </li>
                         
                             <li class="bullet">
+                                <a href="https://KTS-o7.github.io/posts/problem-find-if-path-exists-in-graph/">Problem Find if Path Exists in Graph</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/">Problem Find All Groups of Farmland</a>
                             </li>
                         
@@ -269,10 +275,6 @@
                         
                             <li class="bullet">
                                 <a href="https://KTS-o7.github.io/posts/problem-island-perimeter/">Problem Island Perimeter</a>
-                            </li>
-                        
-                            <li class="bullet">
-                                <a href="https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/">Problem Smallest String Starting From Leaf</a>
                             </li>
                         
                     
@@ -289,6 +291,8 @@
                 
             
                 
+                
+                        
                 
                         
                 
@@ -591,26 +595,63 @@ Use the following command to enter the Raspi configuration</p>
 
   
     <div class="comments">
+  
+  <div id="giscus"></div>
+  <script>
     
-        <div id="giscus"></div>
-        <script src="https://giscus.app/client.js"
-                data-repo="KTS-o7/KTS-o7.github.io"
-                data-repo-id="R_kgDOLt_ntg"
-                data-category-id="DIC_kwDOLt_nts4Ceruy"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                crossorigin="anonymous"
-                async>
-        </script>
-        <script>
-            !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src="https://giscus.app/"+e[o]+c,d.appendChild(r)}}(["giscus.js"],document);
-        </script>
+    function setGiscusTheme() {
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const theme = prefersDarkScheme
+        ? "dark_high_contrast"
+        : "light_high_contrast";
+
+      
+      const giscusScript = document.createElement("script");
+      giscusScript.src = "https://giscus.app/client.js";
+      giscusScript.setAttribute("data-repo", "KTS-o7\/KTS-o7.github.io");
+      giscusScript.setAttribute(
+        "data-repo-id",
+        "R_kgDOLt_ntg"
+      );
+      giscusScript.setAttribute(
+        "data-category-id",
+        "DIC_kwDOLt_nts4Ceruy"
+      );
+      giscusScript.setAttribute(
+        "data-mapping",
+        "pathname"
+      );
+      giscusScript.setAttribute(
+        "data-strict",
+        "0"
+      );
+      giscusScript.setAttribute(
+        "data-reactions-enabled",
+        "1"
+      );
+      giscusScript.setAttribute(
+        "data-emit-metadata",
+        "0"
+      );
+      giscusScript.setAttribute(
+        "data-input-position",
+        "bottom"
+      );
+      giscusScript.setAttribute("data-theme", theme); 
+      giscusScript.setAttribute("data-lang", "en");
+      giscusScript.crossOrigin = "anonymous";
+      giscusScript.async = true;
+
+      
+      document.getElementById("giscus").appendChild(giscusScript);
+    }
+
     
+    setGiscusTheme();
+  </script>
+  
 </div>
 
   
