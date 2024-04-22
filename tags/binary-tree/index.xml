@@ -14,21 +14,21 @@
       <link>https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/</link>
       <pubDate>Wed, 17 Apr 2024 14:56:36 +0530</pubDate>
       <guid>https://KTS-o7.github.io/posts/problem-smallest-string-starting-from-leaf/</guid>
-      <description>Problem Statement Link - Problem 988&#xA;Question You are given the root of a binary tree where each node has a value in the range [0, 25] representing the letters &#39;a&#39; to &#39;z&#39;.&#xA;Return the lexicographically smallest string that starts at a leaf of this tree and ends at the root.&#xA;As a reminder, any shorter prefix of a string is lexicographically smaller.&#xA;For example, &amp;quot;ab&amp;quot; is lexicographically smaller than &amp;quot;aba&amp;quot;.</description>
+      <description>Problem Statement Link - Problem 988 Question You are given the root of a binary tree where each node has a value in the range [0, 25] representing the letters &#39;a&#39; to &#39;z&#39;.&#xA;Return the lexicographically smallest string that starts at a leaf of this tree and ends at the root.&#xA;As a reminder, any shorter prefix of a string is lexicographically smaller.&#xA;For example, &amp;quot;ab&amp;quot; is lexicographically smaller than &amp;quot;aba&amp;quot;.</description>
     </item>
     <item>
       <title>Problem Add One Row to Tree</title>
       <link>https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/</link>
       <pubDate>Tue, 16 Apr 2024 10:05:52 +0530</pubDate>
       <guid>https://KTS-o7.github.io/posts/problem-add-one-row-to-tree/</guid>
-      <description>Problem Statement Link - Problem 623&#xA;Question Given the root of a binary tree and two integers val and depth, add a row of nodes with value val at the given depth depth.&#xA;Note that the root node is at depth 1.&#xA;The adding rule is:&#xA;Given the integer depth, for each not null tree node cur at the depth depth - 1, create two tree nodes with value val as cur&#39;s left subtree root and right subtree root.</description>
+      <description>Problem Statement Link - Problem 623 Question Given the root of a binary tree and two integers val and depth, add a row of nodes with value val at the given depth depth.&#xA;Note that the root node is at depth 1.&#xA;The adding rule is:&#xA;Given the integer depth, for each not null tree node cur at the depth depth - 1, create two tree nodes with value val as cur&#39;s left subtree root and right subtree root.</description>
     </item>
     <item>
       <title>Problem Sum Root to Leaf Numbers</title>
       <link>https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/</link>
       <pubDate>Mon, 15 Apr 2024 19:38:03 +0530</pubDate>
       <guid>https://KTS-o7.github.io/posts/problem-sum-root-to-leaf-numbers/</guid>
-      <description>Problem Statement Link - Problem 129&#xA;Question You are given the root of a binary tree containing digits from 0 to 9 only.&#xA;Each root-to-leaf path in the tree represents a number.&#xA;For example, the root-to-leaf path 1 -&amp;gt; 2 -&amp;gt; 3 represents the number 123. Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.&#xA;A leaf node is a node with no children.</description>
+      <description>Problem Statement Link - Problem 129 Question You are given the root of a binary tree containing digits from 0 to 9 only.&#xA;Each root-to-leaf path in the tree represents a number.&#xA;For example, the root-to-leaf path 1 -&amp;gt; 2 -&amp;gt; 3 represents the number 123. Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.&#xA;A leaf node is a node with no children.</description>
     </item>
   </channel>
 </rss>
