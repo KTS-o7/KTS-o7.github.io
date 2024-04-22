@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Graph on KTS Blog</title>
-    <link>https://KTS-o7.github.io/tags/graph/</link>
-    <description>Recent content in Graph on KTS Blog</description>
+    <title>Bfs on KTS Blog</title>
+    <link>https://KTS-o7.github.io/tags/bfs/</link>
+    <description>Recent content in Bfs on KTS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
     <lastBuildDate>Mon, 22 Apr 2024 16:27:12 +0530</lastBuildDate>
-    <atom:link href="https://KTS-o7.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://KTS-o7.github.io/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Problem Open the Lock</title>
       <link>https://KTS-o7.github.io/posts/problem-open-the-lock/</link>
       <pubDate>Mon, 22 Apr 2024 16:27:12 +0530</pubDate>
       <guid>https://KTS-o7.github.io/posts/problem-open-the-lock/</guid>
       <description>Problem Statement Link - Problem 752&#xA;Question You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: &#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;. The wheels can rotate freely and wrap around: for example we can turn &#39;9&#39; to be &#39;0&#39;, or &#39;0&#39; to be &#39;9&#39;. Each move consists of turning one wheel one slot.&#xA;The lock initially starts at &#39;0000&#39;, a string representing the state of the 4 wheels.</description>
-    </item>
-    <item>
-      <title>Problem Find if Path Exists in Graph</title>
-      <link>https://KTS-o7.github.io/posts/problem-find-if-path-exists-in-graph/</link>
-      <pubDate>Sun, 21 Apr 2024 15:42:16 +0530</pubDate>
-      <guid>https://KTS-o7.github.io/posts/problem-find-if-path-exists-in-graph/</guid>
-      <description>Problem Statement Link - Problem 1971&#xA;Question There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n-1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.</description>
     </item>
   </channel>
 </rss>
