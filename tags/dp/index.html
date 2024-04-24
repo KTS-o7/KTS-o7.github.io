@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-  <title>Matrix :: KTS Blog - Example site for hugo-theme-tailwind</title>
+  <title>Dp :: KTS Blog - Example site for hugo-theme-tailwind</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,11 +15,11 @@
 />
 <meta name="robots" content="noodp" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Matrix"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Dp"/>
 <meta name="twitter:description" content=""/>
 
 
-<link rel="canonical" href="https://KTS-o7.github.io/tags/matrix/" />
+<link rel="canonical" href="https://KTS-o7.github.io/tags/dp/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/css/index.min.6b36fefec2ed9f418034c92a2410b3c6970c05de2c1fa6751ca7da1b786b6e4f.css">
@@ -149,14 +149,16 @@
         
           <article class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-gray-700">
             <h2 class="text-4xl font-semibold text-slate-800 dark:text-slate-200">
-              <a href="/posts/problem-find-all-groups-of-farmland/">Problem Find All Groups of Farmland</a>
+              <a href="/posts/problem-nth-tribonacci-number/">Problem Nth Tribonacci Number</a>
             </h2>
 
             
   
   <div class="my-4 text-large text-slate-600 dark:text-slate-300">
-    Problem Statement Link - Problem 1992 Question You are given a 0-indexed m x n binary matrix land where a 0 represents a hectare of forested land and a 1 represents a hectare of farmland.
-To keep the land organized, there are designated rectangular areas of hectares that consist entirely of farmland. These rectangular areas are called groups. No two groups are adjacent, meaning farmland in one group is not four-directionally adjacent to another farmland in a different group.
+    Problem Statement Link - Problem 1137 Question The Tribonacci sequence T(n) is defined as follows:
+T(0) = 0, T(1) = 1, T(2) = 1, and T(n+3) = T(n) + T(n+1) + T(n+2) for n &gt;= 0.
+Given n, return the value of T(n).
+Note to self This is a straight forward Recursion Problem. We can convert this to DP by using memoization. We will use an array to store the intermediate values to prevent repeated calculations.
   </div>
   
 
@@ -201,7 +203,7 @@ To keep the land organized, there are designated rectangular areas of hectares t
       </li>
       
       <li>
-        <a href="/tags/matrix/"
+        <a href="/tags/math/"
           class="flex flex-row text-sm mr-2 py-1">
           <i class="h-5 w-5 flex-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -213,12 +215,12 @@ To keep the land organized, there are designated rectangular areas of hectares t
 </svg>
 
           </i>
-          <span class="ml-0">matrix</span>
+          <span class="ml-0">math</span>
         </a>
       </li>
       
       <li>
-        <a href="/tags/dfs/"
+        <a href="/tags/dp/"
           class="flex flex-row text-sm mr-2 py-1">
           <i class="h-5 w-5 flex-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -230,7 +232,7 @@ To keep the land organized, there are designated rectangular areas of hectares t
 </svg>
 
           </i>
-          <span class="ml-0">dfs</span>
+          <span class="ml-0">dp</span>
         </a>
       </li>
       
@@ -255,289 +257,8 @@ To keep the land organized, there are designated rectangular areas of hectares t
 </svg>
 
     </i>
-    <time datetime="2024-04-20T10:52:46&#43;05:30">
-      2024-04-20
-    </time>
-  </div>
-
-  <div class="flex flex-row text-base gap-x-1">
-    <i class="h-6 w-6 flex-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hourglass-high" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M6.5 7h11"></path>
-   <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z"></path>
-   <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z"></path>
-</svg>
-
-    </i>
-    <span>
-      3 minutes to read
-    </span>
-  </div>
-</div>
-
-          </article>
-        
-          <article class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-gray-700">
-            <h2 class="text-4xl font-semibold text-slate-800 dark:text-slate-200">
-              <a href="/posts/problem-number-of-islands/">Problem Number of Islands</a>
-            </h2>
-
-            
-  
-  <div class="my-4 text-large text-slate-600 dark:text-slate-300">
-    Problem Statement Link - Problem 200 Question Given an m x n 2D binary grid grid which represents a map of &lsquo;1&rsquo;s (land) and &lsquo;0&rsquo;s (water), return the number of islands.
-An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
-Note to self They use characters not integers for 1 and 0.
-  </div>
-  
-
-
-            
-  <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
-    
-    
-      
-      <li>
-        <a href="/tags/leetcode/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">leetcode</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/cpp/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">cpp</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/matrix/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">matrix</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/dfs/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">dfs</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/array/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">array</span>
-        </a>
-      </li>
-      
-    
-  </ul>
-
-
-
-            <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
-  
-  
-  <div class="flex flex-row text-base gap-x-1">
-    <i class="h-6 w-6 flex-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
-   <path d="M16 3v4"></path>
-   <path d="M8 3v4"></path>
-   <path d="M4 11h16"></path>
-   <path d="M11 15h1"></path>
-   <path d="M12 15v3"></path>
-</svg>
-
-    </i>
-    <time datetime="2024-04-19T13:00:30&#43;05:30">
-      2024-04-19
-    </time>
-  </div>
-
-  <div class="flex flex-row text-base gap-x-1">
-    <i class="h-6 w-6 flex-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hourglass-high" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M6.5 7h11"></path>
-   <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z"></path>
-   <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z"></path>
-</svg>
-
-    </i>
-    <span>
-      2 minutes to read
-    </span>
-  </div>
-</div>
-
-          </article>
-        
-          <article class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-gray-700">
-            <h2 class="text-4xl font-semibold text-slate-800 dark:text-slate-200">
-              <a href="/posts/problem-island-perimeter/">Problem Island Perimeter</a>
-            </h2>
-
-            
-  
-  <div class="my-4 text-large text-slate-600 dark:text-slate-300">
-    Problem Statement Link - Problem 463 Question You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.
-Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
-The island doesn’t have “lakes”, meaning the water inside isn’t connected to the water around the island.
-  </div>
-  
-
-
-            
-  <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
-    
-    
-      
-      <li>
-        <a href="/tags/leetcode/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">leetcode</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/cpp/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">cpp</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/matrix/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">matrix</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/array/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">array</span>
-        </a>
-      </li>
-      
-    
-  </ul>
-
-
-
-            <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
-  
-  
-  <div class="flex flex-row text-base gap-x-1">
-    <i class="h-6 w-6 flex-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
-   <path d="M16 3v4"></path>
-   <path d="M8 3v4"></path>
-   <path d="M4 11h16"></path>
-   <path d="M11 15h1"></path>
-   <path d="M12 15v3"></path>
-</svg>
-
-    </i>
-    <time datetime="2024-04-18T20:48:14&#43;05:30">
-      2024-04-18
+    <time datetime="2024-04-24T13:45:56&#43;05:30">
+      2024-04-24
     </time>
   </div>
 
