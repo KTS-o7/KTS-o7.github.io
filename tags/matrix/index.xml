@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Krishnatejaswi S</copyright>
-    <lastBuildDate>Sat, 20 Apr 2024 10:52:46 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2024 12:15:26 +0530</lastBuildDate>
     <atom:link href="https://KTS-o7.github.io/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Minimum Falling Path Sum II</title>
+      <link>https://KTS-o7.github.io/posts/problem-minimum-falling-path-sum-ii/</link>
+      <pubDate>Fri, 26 Apr 2024 12:15:26 +0530</pubDate>
+      <guid>https://KTS-o7.github.io/posts/problem-minimum-falling-path-sum-ii/</guid>
+      <description>Problem Statement Link: Problem Minimum Falling Path Sum II Question Given an n x n integer matrix grid, return the minimum sum of a falling path with non-zero shifts.&#xA;A falling path with non-zero shifts is a choice of exactly one element from each row of grid such that no two elements chosen in adjacent rows are in the same column.&#xA;Example 1 1 2 3 4 5 6 7 8 9 Input: grid = [[1,2,3],[4,5,6],[7,8,9]] Output: 13 Explanation: The possible falling paths are: [1,5,9], [1,5,7], [1,6,7], [1,6,8], [2,4,8], [2,4,9], [2,6,7], [2,6,8], [3,4,8], [3,4,9], [3,5,7], [3,5,9] The falling path with the smallest sum is [1,5,7], so the answer is 13.</description>
+    </item>
     <item>
       <title>Problem Find All Groups of Farmland</title>
       <link>https://KTS-o7.github.io/posts/problem-find-all-groups-of-farmland/</link>
