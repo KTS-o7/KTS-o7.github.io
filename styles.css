@@ -1,165 +1,95 @@
+/* Global Styles */
 body {
-  font-family: "Josefin Sans";
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
   margin: 0;
-  padding: 15px;
-  background-color: rgb(16, 25, 23);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.wrap {
+
+.container {
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-.profile {
+  max-width: 350px;
   text-align: center;
+}
+
+.profile {
   color: #fff;
   margin-bottom: 20px;
 }
+
 .photo {
-  height: 200px;
-  width: 100%;
-}
-.img {
-  height: 100%;
-  width: 200px;
-  border-radius: 50%;
-  background: url("https://user-images.githubusercontent.com/69011963/137184767-79a13ec7-1bb3-4341-a6da-3a149c9c159a.gif");
-  background-position: center;
-  background-size: cover;
   margin: 0 auto;
-}
-.profile_name {
-  font-weight: bold;
-  display: block;
-  margin: 4px 0;
-}
-.at {
-  font-size: 13px;
+  border: 4px solid #03bef2;
+  padding: 4px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url("https://avatars.githubusercontent.com/u/119525616?s=96&v=4");
+  background-position: center;
+  background-size: cover;
+}
+
+.profile_name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Button Styles */
 .custom-btn {
   width: 100%;
   height: 45px;
-  color: #000;
+  margin: 12px 0;
   border-radius: 5px;
-  padding: 10px 25px;
-  font-family: "Josefin Sans";
   font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
-}
-
-.btn-8 {
-  background-color: #ecfafc;
-  background-image: linear-gradient(315deg, #ecfafc 15%, #d9eb97 74%);
-  line-height: 42px;
-  padding: 0;
-  margin: 14px 0;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background: linear-gradient(135deg, #26d0ee, #03bef2);
   border: none;
-}
-.btn-8 span {
+  cursor: pointer;
   position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-8 span a {
-  text-decoration: none;
-  color: black;
-}
-.btn-8:before,
-.btn-8:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #e1eb97;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-          -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-inset -4px -4px 6px 0 rgba(255,255,255,.5),
-inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
   transition: all 0.3s ease;
-}
-.btn-8:before {
-  height: 0%;
-  width: 2px;
-}
-.btn-8:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-8:hover:before {
-  height: 100%;
-}
-.btn-8:hover:after {
-  width: 100%;
-}
-.btn-8:hover {
-  background: transparent;
-}
-.btn-8 span:hover {
-  color: #e1eb97;
-}
-.btn-8 span:before,
-.btn-8 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #e1eb97;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-          -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-inset -4px -4px 6px 0 rgba(255,255,255,.5),
-inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-  transition: all 0.3s ease;
-}
-.btn-8 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-8 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-8 span:hover:before {
-  height: 100%;
-}
-.btn-8 span:hover:after {
-  width: 100%;
-}
-/*     Social Icons    */
-.sociaicon {
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.socialsanimate {
-  transition: transform 0s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-  z-index: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.socialsalign {
-  padding-left: 22px;
-  padding-right: 22px;
-  color: inherit;
-  text-decoration: underline;
+.custom-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.socialsanimate svg {
-  pointer-events: none;
+
+.custom-btn i {
+  margin-right: 8px;
 }
-.socialssvg {
-  margin-top: 8px;
-  fill: rgb(255, 254, 254);
-  width: 32px;
-  height: 32px;
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background: linear-gradient(135deg, #004266, #0364c5);
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
 }
