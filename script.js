@@ -118,10 +118,21 @@ function typeWriter(element, texts, wait = 3000) {
   typing();
 }
 
-// Particle.js configuration
-particlesJS("particles-js", {
+// Update particle configuration for mobile
+const isMobile =
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+
+const particleConfig = {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
+    number: {
+      value: isMobile ? 30 : 80,
+      density: {
+        enable: true,
+        value_area: isMobile ? 400 : 800,
+      },
+    },
     color: { value: getColor("--color-primary") },
     shape: { type: "circle" },
     opacity: {
@@ -152,11 +163,11 @@ particlesJS("particles-js", {
     },
   },
   interactivity: {
-    detect_on: "canvas",
+    detect_on: isMobile ? "window" : "canvas",
     events: {
       onhover: {
-        enable: true,
-        mode: "bubble", // Try any: "grab", "bubble", "repulse", "push", "remove"
+        enable: !isMobile,
+        mode: "bubble",
       },
       onclick: {
         enable: true,
@@ -191,7 +202,10 @@ particlesJS("particles-js", {
     },
   },
   retina_detect: true,
-});
+};
+
+// Initialize particles with mobile-optimized config
+particlesJS("particles-js", particleConfig);
 
 window
   .matchMedia("(prefers-color-scheme: dark)")
@@ -209,5 +223,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   document.body.classList.add("loaded");
 });
-
-console.log("Script loaded");
