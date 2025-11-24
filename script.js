@@ -1,225 +1,183 @@
-// Add at start of file
-let currentTheme =
-  localStorage.getItem("theme") ||
-  (window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light");
+// Theme Management
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = themeToggle.querySelector('i');
 
-// Add function to update particle colors
-function updateParticleColors() {
-  if (window.pJSDom && window.pJSDom[0]) {
-    const root = document.documentElement;
-    const particles = window.pJSDom[0].pJS.particles;
-    const newColor = getComputedStyle(root)
-      .getPropertyValue("--color-primary")
-      .trim();
-
-    // Update colors
-    particles.color.value = newColor;
-    particles.line_linked.color = newColor;
-
-    // Force particle refresh
-    window.pJSDom[0].pJS.particles.array = [];
-    window.pJSDom[0].pJS.fn.particlesRefresh();
-  }
-}
-
-function setTheme() {
-  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const newTheme = isDark ? "dark" : "light";
-  const root = document.documentElement;
-
-  // Check if theme actually changed
-  if (currentTheme !== newTheme) {
-    currentTheme = newTheme;
-    localStorage.setItem("theme", currentTheme);
-    window.location.reload();
-    return;
-  }
-
-  if (isDark) {
-    root.style.setProperty("--color-bg", "#111");
-    root.style.setProperty("--color-text", "#fff");
-    root.style.setProperty("--color-primary", "#03bef2");
-    root.style.setProperty("--color-primary-light", "#26d0ee");
-    root.style.setProperty("--color-secondary", "#02417f");
-    root.style.setProperty("--color-secondary-dark", "#004266");
-  } else {
-    root.style.setProperty("--color-bg", "#eee");
-    root.style.setProperty("--color-text", "000");
-    root.style.setProperty("--color-primary", "#3bc51f");
-    root.style.setProperty("--color-primary-light", "#26ee6c");
-    root.style.setProperty("--color-secondary", "#217f02");
-    root.style.setProperty("--color-secondary-dark", "#0f6600");
-  }
-
-  // Update particles colors
-  updateParticleColors();
-}
-
-// Get CSS variables
-const getColor = (varName) => {
-  return getComputedStyle(document.documentElement)
-    .getPropertyValue(varName)
-    .trim();
+// Check for saved theme or system preference
+const getPreferredTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        return savedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
+// Apply theme
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    // Update icon
+    if (theme === 'dark') {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
+
+    // Update particles color
+    updateParticles(theme);
+};
+
+// Toggle theme
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+});
+
+// Initialize theme
+const initialTheme = getPreferredTheme();
+setTheme(initialTheme);
+
+// Typewriter Effect
 const texts = [
-  "Full Stack Developer",
-  "Open Source Enthusiast",
-  "Tech Explorer",
+    "Full Stack Developer",
+    "Open Source Enthusiast",
+    "Tech Explorer"
 ];
 
 function typeWriter(element, texts, wait = 3000) {
-  let textIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let isWaiting = false;
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let isWaiting = false;
 
-  function typing() {
-    const currentText = texts[textIndex];
+    function typing() {
+        const currentText = texts[textIndex];
 
-    // Add blinking cursor
-    if (isDeleting) {
-      element.innerHTML = currentText.substring(0, charIndex - 1) + "|";
-      charIndex--;
-    } else {
-      element.innerHTML = currentText.substring(0, charIndex + 1) + "|";
-      charIndex++;
+        if (isDeleting) {
+            element.innerHTML = currentText.substring(0, charIndex - 1) + "|";
+            charIndex--;
+        } else {
+            element.innerHTML = currentText.substring(0, charIndex + 1) + "|";
+            charIndex++;
+        }
+
+        let typingSpeed = 100;
+
+        if (isDeleting) {
+            typingSpeed = 50;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            isWaiting = true;
+            setTimeout(() => {
+                isDeleting = true;
+                isWaiting = false;
+                typing();
+            }, wait);
+            return;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            typingSpeed = 500;
+        }
+
+        if (!isWaiting) {
+            setTimeout(typing, typingSpeed);
+        }
     }
 
-    // Normalize typing speeds
-    let typingSpeed = 100;
-
-    if (isDeleting) {
-      typingSpeed = 50; // Faster deletion
-    }
-
-    if (!isDeleting && charIndex === currentText.length) {
-      isWaiting = true;
-      setTimeout(() => {
-        isDeleting = true;
-        isWaiting = false;
-        typing();
-      }, wait);
-      return;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      textIndex = (textIndex + 1) % texts.length;
-      // Add small pause before typing next word
-      typingSpeed = 500;
-    }
-
-    if (!isWaiting) {
-      setTimeout(typing, typingSpeed);
-    }
-  }
-
-  typing();
+    typing();
 }
 
-// Update particle configuration for mobile
-const isMobile =
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
+// Particles Configuration
+function updateParticles(theme) {
+    const color = theme === 'dark' ? '#facc15' : '#3b82f6'; // Yellow for dark, Blue for light
+
+    if (window.pJSDom && window.pJSDom[0]) {
+        const pJS = window.pJSDom[0].pJS;
+        pJS.particles.color.value = color;
+        pJS.particles.line_linked.color = color;
+        pJS.fn.particlesRefresh();
+    }
+}
 
 const particleConfig = {
-  particles: {
-    number: {
-      value: isMobile ? 30 : 80,
-      density: {
-        enable: true,
-        value_area: isMobile ? 400 : 800,
-      },
-    },
-    color: { value: getColor("--color-primary") },
-    shape: { type: "circle" },
-    opacity: {
-      value: 0.5,
-      random: false,
-      anim: { enable: false },
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: { enable: false },
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: getColor("--color-primary"),
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 6,
-      direction: "none",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-    },
-  },
-  interactivity: {
-    detect_on: isMobile ? "window" : "canvas",
-    events: {
-      onhover: {
-        enable: !isMobile,
-        mode: "bubble",
-      },
-      onclick: {
-        enable: true,
-        mode: "repulse",
-      },
-      resize: true,
-    },
-    modes: {
-      grab: {
-        distance: 400,
-        line_linked: {
-          opacity: 1,
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
         },
-      },
-      bubble: {
-        distance: 400,
-        size: 4,
-        duration: 2,
-        opacity: 0.8,
-        speed: 3,
-        color: getColor("--color-primary-light"),
-      },
-      repulse: {
-        distance: 200,
-      },
-      push: {
-        particles_nb: 4,
-      },
-      remove: {
-        particles_nb: 2,
-      },
+        color: {
+            value: "#facc15"
+        },
+        shape: {
+            type: "circle"
+        },
+        opacity: {
+            value: 0.5,
+            random: false
+        },
+        size: {
+            value: 3,
+            random: true
+        },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#facc15",
+            opacity: 0.4,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false
+        }
     },
-  },
-  retina_detect: true,
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: {
+                enable: true,
+                mode: "grab"
+            },
+            onclick: {
+                enable: true,
+                mode: "push"
+            },
+            resize: true
+        },
+        modes: {
+            grab: {
+                distance: 140,
+                line_linked: {
+                    opacity: 1
+                }
+            },
+            push: {
+                particles_nb: 4
+            }
+        }
+    },
+    retina_detect: true
 };
 
-// Initialize particles with mobile-optimized config
-particlesJS("particles-js", particleConfig);
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    particlesJS('particles-js', particleConfig);
 
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", (e) => {
-    setTheme();
-    updateParticleColors(); // Add explicit update call
-  });
-
-// Initialize effects when page loads
-document.addEventListener("DOMContentLoaded", () => {
-  setTheme();
-  const profileName = document.querySelector(".profile_box");
-  if (profileName) {
-    typeWriter(profileName, texts, 2000);
-  }
-  document.body.classList.add("loaded");
+    const profileBox = document.querySelector('.profile_box');
+    if (profileBox) {
+        typeWriter(profileBox, texts, 2000);
+    }
 });
