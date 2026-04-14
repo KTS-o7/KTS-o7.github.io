@@ -301,6 +301,10 @@ a {
   animation: fadeIn 0.4s ease-out 0.7s forwards;
 }
 
+.links a:nth-child(7) {
+  animation: fadeIn 0.4s ease-out 0.8s forwards;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   .container {
