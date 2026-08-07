@@ -42,9 +42,10 @@ setTheme(initialTheme);
 
 // Typewriter Effect
 const texts = [
-    "Full Stack Developer",
-    "Open Source Enthusiast",
-    "Tech Explorer"
+    "AI Engineer",
+    "Production LLM Systems",
+    "Agentic Workflows & RAG",
+    "Open Source Contributor"
 ];
 
 function typeWriter(element, texts, wait = 3000) {
