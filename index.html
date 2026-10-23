@@ -8,7 +8,7 @@
 
   <title>Krishnatejaswi Shenthar | AI Engineer — Production LLM Systems</title>
   <meta name="description"
-    content="Krishnatejaswi Shenthar — AI Engineer building production LLM systems: agentic workflows, RAG, and agent memory. Analyst, AI & Agent Systems at Future Standard. Ex-OnFinance AI, ex-RingCentral." />
+    content="Krishnatejaswi Shenthar — AI Engineer building production LLM systems: agentic workflows, RAG, and agent memory. Analyst, AI &amp; Agent Systems at Future Standard. Ex-OnFinance AI, ex-RingCentral." />
   <meta name="author" content="Krishnatejaswi Shenthar" />
   <link rel="canonical" href="https://shenthar.me/" />
 
@@ -24,11 +24,24 @@
   <meta name="twitter:description"
     content="AI Engineer building production LLM systems — agentic workflows, RAG, and agent memory. Currently at Future Standard." />
 
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js" defer></script>
 
   <script type="application/ld+json">
@@ -46,60 +59,116 @@
       "https://github.com/KTS-o7",
       "https://www.linkedin.com/in/krishnatejaswi-shenthar/",
       "https://x.com/kts_o7",
-      "https://krishnatejaswi-s.vercel.app/"
+      "https://portfolio.shenthar.me/"
     ]
   }
   </script>
 </head>
 
 <body>
-  <div id="particles-js"></div>
-  <main class="container">
-    <header class="profile">
-      <div class="photo">
-        <div class="img"></div>
+  <main class="page">
+    <header class="tile profile">
+      <div class="profile-top">
+        <div class="profile-id">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/119525616?s=256&v=4"
+            alt="Krishnatejaswi Shenthar" width="88" height="88" />
+          <div class="profile-text">
+            <h1 class="name">Krishnatejaswi Shenthar</h1>
+            <p class="role">AI Engineer · Bangalore</p>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
       </div>
-      <h1 class="profile_name">Krishnatejaswi S</h1>
-      <span class="profile_box">AI Engineer</span>
-      <p class="profile_now">
-        Now: Analyst, AI &amp; Agent Systems @ Future Standard — building agentic memory
-        and production LLM systems. Previously ComplianceOS @ OnFinance AI (1B+ tokens/mo),
-        ex-RingCentral.
+      <p class="now">
+        <strong>Now:</strong> Analyst, AI &amp; Agent Systems @ Future Standard — building agentic memory
+        and production LLM systems. Previously ComplianceOS @ OnFinance AI (1B+ tokens/mo), ex-RingCentral.
       </p>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-      </button>
+      <div class="profile-foot">
+        <p class="hint">Press the key on any tile. <kbd>E</kbd> copies my email.</p>
+        <div class="footer-line"><span>shenthar.me</span><span>© 2026</span></div>
+      </div>
     </header>
 
-    <nav class="links" aria-label="Social links">
-      <a href="https://github.com/KTS-o7/" target="_blank" rel="noopener noreferrer"><button
-          class="custom-btn btn-8">
-          <span><i class="fab fa-github"></i> Github</span>
-        </button></a>
-      <a href="https://kts-o7.github.io/blog/" target="_blank" rel="noopener noreferrer"><button
-          class="custom-btn btn-8">
-          <span><i class="fas fa-user-ninja"></i> Blog</span>
-        </button></a>
-      <a href="https://krishnatejaswi-s.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-          class="custom-btn btn-8">
-          <span><i class="fas fa-laptop"></i> My Website</span>
-        </button></a>
-      <a href="mailto:shentharkrishnatejaswi@gmail.com"><button class="custom-btn btn-8">
-          <span><i class="fas fa-paper-plane"></i> Email</span>
-        </button></a>
-      <a href="https://www.linkedin.com/in/krishnatejaswi-shenthar/" target="_blank"
-        rel="noopener noreferrer"><button class="custom-btn btn-8">
-          <span><i class="fab fa-linkedin"></i> LinkedIn</span>
-        </button></a>
-      <a href="https://x.com/kts_o7" target="_blank" rel="noopener noreferrer"><button
-          class="custom-btn btn-8">
-          <span><i class="fab fa-x-twitter"></i> Twitter</span>
-        </button></a>
-      <a href="https://drive.google.com/file/d/1uy1w2prce_k-YD5bZrxUytEDXIXil6-2/view" target="_blank"
-        rel="noopener noreferrer"><button class="custom-btn btn-8">
-          <span><i class="fas fa-file-alt"></i> Resume</span>
-        </button></a>
+    <nav class="grid" aria-label="Links">
+      <a class="tile tile-call" data-key="b" href="https://calendar.app.google/zjsY3uvWa4avw1wq6" target="_blank"
+        rel="noopener noreferrer">
+        <span class="arrow-dot" aria-hidden="true">↗</span>
+        <span class="title">Book a call</span>
+        <kbd class="kbd kbd-abs" aria-hidden="true">B</kbd>
+      </a>
+
+      <div class="tile tile-email">
+        <a class="email-link" href="mailto:shentharkrishnatejaswi@gmail.com">
+          <span class="title">Email me</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <button id="copy-email" class="copy" type="button" title="shentharkrishnatejaswi@gmail.com"
+          aria-label="Copy email address">
+          <span class="copy-addr copy-full">shentharkrishnatejaswi@gmail.com</span>
+          <span class="copy-addr copy-short">address</span>
+          <span class="copy-pill">
+            <kbd class="kbd kbd-inline" aria-hidden="true">E</kbd>
+            <span class="copy-label" aria-live="polite">copy</span>
+          </span>
+        </button>
+      </div>
+
+      <a class="tile tile-portfolio" data-key="p" href="https://portfolio.shenthar.me" target="_blank"
+        rel="noopener noreferrer">
+        <span class="tile-top">
+          <i class="fas fa-laptop icon" aria-hidden="true"></i>
+          <span class="arrow-soft" aria-hidden="true">↗</span>
+        </span>
+        <span class="quote">“I build production LLM systems — agents, RAG, and evaluation pipelines that hold up at
+          scale.”</span>
+        <span class="label-block">
+          <span class="title">Portfolio</span>
+          <span class="sub">portfolio.shenthar.me</span>
+        </span>
+        <kbd class="kbd kbd-abs" aria-hidden="true">P</kbd>
+      </a>
+
+      <a class="tile tile-link tile-half" data-key="r"
+        href="https://drive.google.com/file/d/1uy1w2prce_k-YD5bZrxUytEDXIXil6-2/view" target="_blank"
+        rel="noopener noreferrer">
+        <span class="tile-top"><i class="fas fa-file-alt icon" aria-hidden="true"></i><span class="arrow"
+            aria-hidden="true">↗</span><kbd class="kbd" aria-hidden="true">R</kbd></span>
+        <span class="label-block"><span class="title-sm">Resume</span><span class="sub">PDF · Drive</span></span>
+      </a>
+
+      <a class="tile tile-link tile-half" data-key="g" href="https://github.com/KTS-o7/" target="_blank"
+        rel="noopener noreferrer">
+        <span class="tile-top"><i class="fab fa-github icon" aria-hidden="true"></i><span class="arrow"
+            aria-hidden="true">↗</span><kbd class="kbd" aria-hidden="true">G</kbd></span>
+        <span class="label-block"><span class="title-sm">GitHub</span><span class="sub">KTS-o7</span></span>
+      </a>
+
+      <a class="tile tile-link tile-wide" data-key="w" href="https://portfolio.shenthar.me/blog" target="_blank"
+        rel="noopener noreferrer">
+        <span class="tile-top"><i class="fas fa-user-ninja icon" aria-hidden="true"></i><span class="arrow"
+            aria-hidden="true">↗</span><kbd class="kbd" aria-hidden="true">W</kbd></span>
+        <span class="label-block"><span class="title-sm">Blog</span><span
+            class="sub">portfolio.shenthar.me/blog</span></span>
+      </a>
+
+      <a class="tile tile-link" data-key="l" href="https://www.linkedin.com/in/krishnatejaswi-shenthar/"
+        target="_blank" rel="noopener noreferrer">
+        <span class="tile-top"><i class="fab fa-linkedin icon" aria-hidden="true"></i><span class="arrow"
+            aria-hidden="true">↗</span><kbd class="kbd" aria-hidden="true">L</kbd></span>
+        <span class="label-block"><span class="title-sm">LinkedIn</span><span
+            class="sub">in/krishnatejaswi-shenthar</span></span>
+      </a>
+
+      <a class="tile tile-link" data-key="x" href="https://x.com/kts_o7" target="_blank" rel="noopener noreferrer">
+        <span class="tile-top"><i class="fab fa-x-twitter icon" aria-hidden="true"></i><span class="arrow"
+            aria-hidden="true">↗</span><kbd class="kbd" aria-hidden="true">X</kbd></span>
+        <span class="label-block"><span class="title-sm">Twitter</span><span class="sub">@kts_o7</span></span>
+      </a>
     </nav>
+
+    <footer class="footer-line mobile-footer"><span>shenthar.me</span><span>© 2026</span></footer>
   </main>
 </body>
 
