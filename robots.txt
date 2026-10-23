@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://shenthar.me/sitemap.xml
+Sitemap: https://shenthar.me/blog/sitemap.xml
