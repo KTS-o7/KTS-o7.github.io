@@ -18,7 +18,7 @@ themeToggle.addEventListener('click', () => {
 syncThemeIcon();
 
 // Copy email
-const EMAIL = 'shentharkrishnatejaswi@gmail.com';
+const EMAIL = 'hi@shenthar.me';
 const copyBtn = document.getElementById('copy-email');
 const copyLabel = copyBtn.querySelector('.copy-label');
 let copyTimer;
